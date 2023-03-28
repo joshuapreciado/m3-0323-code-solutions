@@ -10,7 +10,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <CustomButton />
+        <CustomButton className="ButtonColor" text="I" />
+        <CustomButton className="ButtonColor2" text="know" />
+        <CustomButton className="ButtonColor3" text="React!" />
       </header>
     </div>
   );
