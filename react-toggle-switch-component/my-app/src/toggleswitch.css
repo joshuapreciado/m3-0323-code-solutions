@@ -1,0 +1,56 @@
+h2 {
+  margin-left: 12px;
+}
+
+.Off {
+  background-color: #333;
+}
+
+.On {
+  background-color: #fff;
+}
+
+.center {
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.empty {
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  width: 70px;
+  height: 30px;
+  background-color: white;
+  border: black solid 3px;
+  border-radius: 30px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.empty::after {
+  content: "";
+  position: absolute;
+  transition: left 0.3s;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 15px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.checkbox:checked + .empty::after {
+  left: 50px;
+}
+
+.checkbox:checked + .empty {
+  background-color: green;
+}
+
+.checkbox {
+  display: none;
+}
