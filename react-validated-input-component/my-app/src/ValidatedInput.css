@@ -1,0 +1,23 @@
+p {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+i {
+  margin-left: 1rem;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.showpassword {
+  font-size: 17px;
+}
